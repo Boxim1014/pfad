@@ -1,0 +1,5 @@
+pandas
+io
+bs4
+requests
+matplotlib

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="æ°è±¡åº">
+    <meta name="keywords" content="æ°è±¡åº">
+    <meta name="viewport" content="width=device-width,user-scalable=yes,maximum-scale=2" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon.png">
+    <link href="../css/normalize.css" type="text/css" rel="stylesheet" />
+    <link href="../css/layout.css" type="text/css" rel="stylesheet" />
+    <link href="../css/layout_sp.css" type="text/css" rel="stylesheet" />
+    <link href="../css/quake.css" type="text/css" rel="stylesheet" />
+    <title></title>
+</head>
+
+<body>
+<div class="wrap">
+
+<header>
+<div class="inner">
+<h1><img id="icon_jma" src="../images/common/logo.gif"/></h1>
+<div class="language_select">
+<div id="language_select_label" class="language_select_label"></div>
+<form>
+<select name="language_select" id="language_select" onChange="onChangeLanguage(value)">
+	<option value="jp">æ¥æ¬èª</option>
+	<option value="en">English</option>
+	<option value="cn_zs">ç®ä½ä¸­æ</option>
+	<option value="cn_zt">ç¹é«ä¸­æ</option>
+	<option value="kr">íêµ­ì´</option>
+	<option value="es">EspaÃ±ol</option>
+	<option value="pt">PortuguÃªs</option>
+	<option value="id">Bahasa Indonesia</option>
+	<option value="vn">Tiáº¿ng Viá»t</option>
+	<option value="ph">Tagalog</option>
+	<option value="th">à¸ à¸²à¸©à¸²à¹à¸à¸¢</option>
+	<option value="np">à¤¨à¥à¤ªà¤¾à¤²à¥ à¤­à¤¾à¤·à¤¾</option>
+  	<option value="kh">áá¶áá¶ááááá</option>
+  	<option value="mm">áá¼ááºáá¬áá¬áá¬ááá¬á¸</option>
+  	<option value="mn">ÐÐ¾Ð½Ð³Ð¾Ð» ÑÑÐ»</option>
+</select>
+</form>
+</div>
+</div>
+</header>
+
+<div id="globalMenuS"><!-- globalMenuS start-->
+<div id="top-head">
+<div id="mobile-head">
+<div id="nav-toggle">
+    <div id="menu_title" class="init-bottom">
+   </div>
+</div>
+</div>
+<nav id="global-nav">
+<ul>
+<li><a id="tab_home" href="../index.html"></a></li>
+<li><a id="tab_warn" href="../warn/index.html"></a></li>
+<li><a id="tab_yoho" href="../yoho/index.html"></a></li>
+<li><a id="tab_cyclon" href="../cyclone/index.html"></a></li>
+<li><a id="tab_cloud" target="_blank" href="#"></a></li>
+<li><a id="tab_kotan" target="_blank" href="#"></a></li>
+<li><a id="tab_sub_landslide" target="_blank" href="#"></a>
+<li><a id="tab_sub_inundation" target="_blank" href="#"></a>
+<li><a id="tab_sub_flood" target="_blank" href="#"></a>
+<li><a id="tab_tsunami" href="../tsunami/index.html"></a></li>
+<li><a id="tab_quake" href="../quake/index.html"></a></li>
+<li><a id="tab_volcano" href="../volcano/index.html"></a></li>
+</ul>
+</nav>
+</div>
+</div><!-- globalMenuS end-->
+
+<main>
+<div class="inner">
+	<div id="mente">
+		<div id="mente-emoji"></div>
+		<div id="mente-message"></div>
+	</div>
+
+<div class="breadcrumb">
+<ul>
+<li><a id="breadcrumb_home" href="../index.html"></a></li>
+<li id="breadcrumb_quake_list"></li>
+</ul>
+</div>
+
+<section class="quake_contents">
+
+<h1 id="header"></h1>
+
+<h2 id="sub_header"></h2>
+
+<div class="quakelevel_link">
+<a id="quake_advisory_link" href="quake_advisory.html"></a>
+</div>
+
+<table id="quakeindex_table" width="100%" border="0" cellspacing="0" cellpadding="0" class="quakeindex_table">
+	<tbody>
+		<tr>
+			<th id="quaketable_col01" scope="col" class="quaketable_col01"></th>
+			<th id="quaketable_col02" scope="col" class="quaketable_col02"></th>
+			<th id="quaketable_col03" scope="col" class="quaketable_col03"></th>
+			<th id="quaketable_col04" scope="col" class="quaketable_col04"></th>
+			<th id="quaketable_col05" scope="col" class="quaketable_col05"></th>
+		</tr>
+	</tbody>
+</table>
+
+
+
+
+</section>
+
+</div>
+</main>
+
+<div id="pagetop"><a href="#top">topã¸</a></div>
+
+<footer><!-- footer -->
+<div class="inner">
+<p id="copyright" class="copyright"></p>
+</div>
+</footer>
+<!-- /footer -->
+
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/util.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/quake_list.js"></script>
+<script src="../js/mente_message.js"></script>
+<script>
+write_error_message("../data/VXSE53/warning.json", "#mente-emoji", "#mente-message");
+</script>
+
+</div>
+</body>
+</html>
