@@ -1,10 +1,12 @@
+import os
+os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
 from diffusers import DiffusionPipeline
 import torch
 
 model = "runwayml/stable-diffusion-v1-5"
 
 pipe = DiffusionPipeline.from_pretrained(model, torch_dtype=torch.float16)
-pipe.to("cuda")
+pipe.to('cuda')
 
 while True:
     prompt = input("Type a prompt and press enter to generate an image:\n>>> ")
