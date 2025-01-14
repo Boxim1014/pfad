@@ -13,18 +13,18 @@ screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption("点击爱心")
 
 # Load heart image
-heart_image = pygame.image.load(r"E:\POLYU_SEM1\SD5913_Gio\pfad\assignment\assignment02\assets\heart.png")
+heart_image = pygame.image.load(r"/pfad/assignment/assignment03\assets\heart.png")
 heart_image = pygame.transform.scale(heart_image, (50, 50))
 
 # Load and scale cat image
-cat_image_original = pygame.image.load(r"E:\POLYU_SEM1\SD5913_Gio\pfad\assignment\assignment02\assets\cat.png")
+cat_image_original = pygame.image.load(r"/pfad/assignment/assignment03\assets\cat.png")
 cat_image_original = pygame.transform.scale(cat_image_original, (150, 150))
 
 # Load sound effect
-click_sound = pygame.mixer.Sound(r"E:\POLYU_SEM1\SD5913_Gio\pfad\assignment\assignment02\assets\Touch Sound _Cute.mp3")
+click_sound = pygame.mixer.Sound(r"/pfad/assignment/assignment03\assets\Touch Sound _Cute.mp3")
 
 # Load background music
-pygame.mixer.music.load(r"E:\POLYU_SEM1\SD5913_Gio\pfad\assignment\assignment02\assets\cute-music-26476.mp3")
+pygame.mixer.music.load(r"/pfad/assignment/assignment03\assets\cute-music-26476.mp3")
 pygame.mixer.music.play(-1)  # -1 for infinite loop
 
 # Cat properties
